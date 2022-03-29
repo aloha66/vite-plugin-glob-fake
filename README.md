@@ -1,6 +1,6 @@
-# [name]
+# vite-plugin-glob-fake
 
-[![NPM version](https://img.shields.io/npm/v/[name]?color=a1b858&label=)](https://www.npmjs.com/package/[name])
+[![NPM version](https://img.shields.io/npm/v/vite-plugin-glob-fake?color=a1b858&label=)](https://www.npmjs.com/package/vite-plugin-glob-fake)
 
 ## Sponsors
 
