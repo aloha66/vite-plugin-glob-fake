@@ -1,15 +1,7 @@
 # vite-plugin-glob-fake
 
-[![NPM version](https://img.shields.io/npm/v/vite-plugin-glob-fake?color=a1b858&label=)](https://www.npmjs.com/package/vite-plugin-glob-fake)
+## 逗号运算符
+执行方法并把最好一个赋值给变量
+var a = (1,2) // a = 2
 
-## Sponsors
-
-<p align="center">
-  <a href="https://cdn.jsdelivr.net/gh/antfu/static/sponsors.svg">
-    <img src='https://cdn.jsdelivr.net/gh/antfu/static/sponsors.svg'/>
-  </a>
-</p>
-
-## License
-
-[MIT](./LICENSE) License © 2021 [Anthony Fu](https://github.com/antfu)
+var ss = (console.log(1),2) // ss = 2

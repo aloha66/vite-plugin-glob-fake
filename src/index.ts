@@ -4,9 +4,9 @@ import { transform } from './transform'
 
 // \b 划分单词边界
 /**
- * globNext转成匹配文件内容
+ * myGlob转成匹配文件内容
  * 在代码中使用
- * import.meta.globNext<T>('regex path')
+ * import.meta.myGlob<T>('regex path')
  * @returns 返回一个对象 key是字符串，value是一个Promise
  */
 export default function(): Plugin {
