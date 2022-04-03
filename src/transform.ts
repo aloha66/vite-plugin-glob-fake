@@ -1,13 +1,16 @@
 import { dirname } from 'path'
 import fg from 'fast-glob'
 import MagicString from 'magic-string'
-import { parse } from 'acorn'
 import type { ArrayExpression, Literal, ObjectExpression } from 'estree'
+import type { TransformPluginContext } from 'rollup'
 
 const importGlobRE = /\bimport\.meta\.myGlob(?:<\w+>)?\(([\s\S]*?)\)/g
 const importPrefix = '__vite_glob_next_'
 
-export async function transform(code: string, id: string) {
+export async function transform(
+  code: string,
+  id: string,
+  parse: TransformPluginContext['parse']) {
   const matchs = Array.from(code.matchAll(importGlobRE))
   if (!matchs.length) return
 

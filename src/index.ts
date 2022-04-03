@@ -13,8 +13,8 @@ export default function(): Plugin {
   return {
     name: 'vite-plugin-glob-fake',
     // 页面运行时才执行
-     transform(code, id) {
-      return transform(code, id)
+    transform(code, id) {
+      return transform(code, id, this.parse)
     },
   }
 }
